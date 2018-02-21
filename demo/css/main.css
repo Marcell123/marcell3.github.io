@@ -1,0 +1,638 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 14px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  -webkit-transition: 0.3s all ease-out 0s;
+  -o-transition: 0.3s all ease-out 0s;
+  transition: 0.3s all ease-out 0s;
+}
+
+.caption-content {
+  transform: translateY(50%);
+}
+
+/* Header */
+.menu-wrap {
+  padding: 1.2rem 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.menu-wrap h1 {
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  text-transform: uppercase;
+  line-height: 3.2rem;
+  padding: 1.5rem;
+  width: 28%;
+}
+
+.menu-wrap h1:hover a {
+  color: #fff;
+}
+
+.menu-wrap h1 a {
+  color: #9d9d9d;
+  cursor: pointer;
+}
+
+.menu-wrap ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 3.2rem;
+}
+
+.menu-wrap ul li {
+  display: flex;
+}
+
+.menu-wrap ul li a {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Welcome */
+section#Welcome {
+  background: #009EE3;
+  color: #fff;
+  padding: 7rem 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  /* Owl Carousel 1st arrows style */
+}
+
+section#Welcome h3 {
+  margin: 0 0 3.5rem;
+  text-transform: uppercase;
+}
+
+section#Welcome p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+section#Welcome .owl-nav {
+  border: 2px solid #fff;
+  display: inline-block;
+  float: right;
+  padding: 0.1rem 0.8rem 0.5rem;
+}
+
+section#Welcome .owl-nav i {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+
+section#Welcome .owl-prev, section#Welcome .owl-next {
+  background: none !important;
+  font-size: 1.6rem !important;
+  padding: 0 5px !important;
+  margin: 0 !important;
+  line-height: 2.4rem;
+}
+
+section#Welcome .welcome h3 {
+  margin: 0 0 6.5rem;
+}
+
+section#Welcome .welcome img {
+  border-radius: 50%;
+  max-width: 10rem;
+  margin-right: 3.5rem;
+  border: 3px solid #fff;
+}
+
+section#Welcome .welcome p {
+  overflow: hidden;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  margin-bottom: 7rem;
+}
+
+section#Welcome .welcome a {
+  border: 2px solid #fff;
+  display: inline-block;
+  padding: 1.2rem 3.5rem;
+}
+
+/* Services */
+section#Service {
+  padding: 7rem 0;
+}
+
+section#Service .service-title {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+section#Service .service-title h2 {
+  font-size: 3.6rem;
+  margin: 0 0 3rem;
+  padding-bottom: 3rem;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  color: #252525;
+  position: relative;
+}
+
+section#Service .service-title h2:after {
+  border-bottom: 1px solid #009ee3;
+  content: "";
+  display: block;
+  left: 45%;
+  bottom: 0;
+  position: absolute;
+  width: 115px;
+}
+
+section#Service .service-title p {
+  font-size: 1.6rem;
+  color: #818181;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+section#Service .service-item {
+  text-align: center;
+}
+
+section#Service .service-item:hover .service-icon {
+  border: 3px solid #009EE3;
+}
+
+section#Service .service-item:hover .service-icon i {
+  color: #009EE3;
+}
+
+section#Service .service-item:hover h3 {
+  margin-top: 4rem;
+  transition: all 0.3s ease 0s;
+}
+
+section#Service .service-item .service-icon {
+  border: 3px solid transparent;
+  display: inline-block;
+  font-size: 1.6rem;
+  height: 85px;
+  width: 85px;
+  line-height: 101px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease 0s;
+}
+
+section#Service .service-item .service-icon i {
+  transform: rotate(-45deg);
+  color: #818181;
+}
+
+section#Service .service-item h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: #252525;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+section#Service .service-item p {
+  font-size: 1.6rem;
+  color: #818181;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+
+/* Featured projects */
+section#Featured-projects {
+  padding-top: 7rem;
+}
+
+section#Featured-projects .featured-projects-title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+section#Featured-projects .featured-projects-title h2 {
+  font-size: 3.6rem;
+  margin: 0 0 3rem;
+  padding-bottom: 3rem;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  color: #252525;
+  position: relative;
+}
+
+section#Featured-projects .featured-projects-title h2:after {
+  border-bottom: 1px solid #009ee3;
+  content: "";
+  display: block;
+  left: 45%;
+  bottom: 0;
+  position: absolute;
+  width: 115px;
+}
+
+section#Featured-projects .featured-projects-title p {
+  font-size: 1.6rem;
+  color: #818181;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+section#Featured-projects .project-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+section#Featured-projects .project-wrapper figcaption.mask {
+  background-color: rgba(54, 55, 50, 0.79);
+  bottom: -126px;
+  color: #fff;
+  padding: 25px;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+section#Featured-projects .project-wrapper .portfolio-item {
+  display: inline-block;
+  width: 32%;
+  cursor: pointer;
+  margin: 0 1% 1% 0;
+  position: relative;
+  overflow: hidden;
+}
+
+section#Featured-projects .project-wrapper .portfolio-item .external {
+  position: absolute;
+  right: 0;
+  top: -4.7rem;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+section#Featured-projects .project-wrapper .portfolio-item .external li {
+  display: inline-block;
+}
+
+section#Featured-projects .project-wrapper .portfolio-item .external li a {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #818181;
+  display: block;
+  padding: 10px 18px 13px;
+  font-size: 15px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+section#Featured-projects .project-wrapper .portfolio-item .external li a:hover {
+  background-color: #009EE3;
+  color: #fff;
+}
+
+section#Featured-projects .project-wrapper .portfolio-item:hover figcaption.mask {
+  bottom: 0;
+}
+
+section#Featured-projects .project-wrapper .portfolio-item:hover .external {
+  top: 0;
+}
+
+section#Featured-projects .project-wrapper figcaption.mask h3 {
+  margin: 0;
+  color: #fff;
+}
+
+/* fancybox inner content*/
+.fancybox-title.fancybox-title-inside-wrap {
+  padding: 15px;
+}
+
+.fancybox-title h3 {
+  margin: 0 0 15px;
+}
+
+.fancybox-title p {
+  color: #818181;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.fancybox-title-inside-wrap {
+  padding-top: 0;
+}
+
+.fancybox-item.fancybox-close {
+  background: url("../../images/icons/close.png") no-repeat scroll 0 0 transparent;
+  height: 50px;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+
+.fancybox-next span {
+  background: url("../../images/icons/right.png") no-repeat scroll center center #009ee3;
+  height: 50px;
+  width: 50px;
+  right: 0;
+}
+
+.fancybox-prev span {
+  background: url("../../images/icons/left.png") no-repeat scroll center center #009ee3;
+  height: 50px;
+  width: 50px;
+  left: 0;
+}
+
+/* What People Say */
+section#Review {
+  background: url(../../images/parallax/review.jpg);
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  margin-top: 7rem;
+  /* Owl Carousel 2nd arrows style */
+}
+
+section#Review .overlay {
+  background-color: rgba(15, 155, 224, 0.78);
+  padding: 70px 0 40px;
+}
+
+section#Review .overlay h2 {
+  font-size: 3.6rem;
+  margin: 0 0 3rem;
+  padding-bottom: 3rem;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+
+section#Review .overlay h2:after {
+  border-bottom: 1px solid #fff;
+  content: "";
+  display: block;
+  left: 45%;
+  bottom: 0;
+  position: absolute;
+  width: 115px;
+}
+
+section#Review .overlay .clients {
+  width: 64%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+section#Review .overlay .clients img {
+  border-radius: 50%;
+  max-width: 10rem;
+  margin-right: 3.5rem;
+  border: 3px solid #fff;
+  margin: 0 auto;
+}
+
+section#Review .overlay .clients .quote {
+  position: relative;
+}
+
+section#Review .overlay .clients .quote:before {
+  content: '';
+  background: url(../../images/icons/quotes.png);
+  background-repeat: no-repeat;
+  bottom: 127px;
+  height: 33px;
+  top: 35px;
+  left: -35px;
+  position: absolute;
+  width: 45px;
+}
+
+section#Review .overlay .clients .quote:after {
+  content: '';
+  background: url(../../images/icons/quotes.png);
+  background-position: -58px 0;
+  background-repeat: no-repeat;
+  bottom: -60px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  width: 45px;
+}
+
+section#Review .overlay .clients .quote span {
+  display: inline-block;
+  font-weight: 700;
+  margin: 40px 0 30px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+}
+
+section#Review .overlay .clients .quote p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+section#Review .owl-nav {
+  border: 2px solid #fff;
+  display: inline-block;
+  padding: 0.1rem 0.8rem 0.5rem;
+}
+
+section#Review .owl-nav i {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+
+section#Review .owl-prev, section#Review .owl-next {
+  background: none !important;
+  font-size: 1.6rem !important;
+  padding: 0 5px !important;
+  margin: 0 !important;
+  line-height: 2.4rem;
+}
+
+/* Price */
+section#price {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+section#price .price-title {
+  margin-bottom: 5rem;
+}
+
+section#price .price-title h2 {
+  font-size: 3.6rem;
+  margin: 0 0 3rem;
+  padding-bottom: 3rem;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  color: #252525;
+  position: relative;
+}
+
+section#price .price-title h2:after {
+  border-bottom: 1px solid #009ee3;
+  content: "";
+  display: block;
+  left: 45%;
+  bottom: 0;
+  position: absolute;
+  width: 115px;
+}
+
+section#price .price-title p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  color: #818181;
+  font-weight: 500;
+}
+
+section#price .price-block {
+  border: 1px solid #e3e3e3;
+}
+
+section#price .price-block span {
+  display: block;
+  font-size: 2.4rem;
+  color: #252525;
+  padding: 3rem 0;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+section#price .price-block .price-list {
+  background: #F8F8F8;
+  padding: 2rem 0;
+}
+
+section#price .price-block .price-list span {
+  display: inline-block;
+  padding: 0;
+  color: #727272;
+}
+
+section#price .price-block .price-list span:first-child {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
+
+section#price .price-block .price-list span:nth-child(2) {
+  font-size: 6.5rem;
+  margin-bottom: 2.5rem;
+  line-height: 6.5rem;
+}
+
+section#price .price-block .price-list span:last-child {
+  font-size: 1.6rem;
+  text-transform: lowercase;
+}
+
+section#price .price-block ul {
+  margin-bottom: 0;
+}
+
+section#price .price-block ul li {
+  border-top: 1px solid #e3e3e3;
+  padding: 2.5rem 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #818181;
+  line-height: 2.4rem;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+section#price .price-block ul li:last-child {
+  text-transform: uppercase;
+}
+
+section#price .price-block ul li:last-child a {
+  color: #019EE3;
+}
+
+section#price .price-block ul li:last-child:hover {
+  background: #019EE3;
+}
+
+section#price .price-block ul li:last-child:hover a {
+  color: #fff;
+}
+
+.current {
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.19);
+}
+
+.current .price-list {
+  background: #019EE3 !important;
+}
+
+.current .price-list span {
+  color: #fff !important;
+}
+
+.current ul li:last-child {
+  background: #019EE3;
+}
+
+.current ul li:last-child a {
+  color: #fff !important;
+}
