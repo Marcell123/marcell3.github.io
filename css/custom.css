@@ -93,11 +93,13 @@
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    line-height: 25px;
 }
 
 .demo-2 .sl-slider h2 {
 	font-size: 52px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+	font-family: 'Open Sans', sans-serif;
 }
 
 .demo-2 .sl-slider p {
@@ -107,6 +109,7 @@
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
 	text-transform: capitalize;
 	margin-bottom: 30px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .demo-2 .bg-img {

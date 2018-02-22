@@ -47,6 +47,13 @@
 </head>
 <body>
 
+	<!-- Preloader -->
+		<div id="preloader">
+	    <div class="loder-box">
+	    	<div class="battery"></div>
+	    </div>
+		</div>
+
 	<!--Header-->
 		<header class="about-slider">
 
@@ -54,7 +61,7 @@
 				<div class="container">
 					<div class="row">
 
-						<div class="col-md-4">
+						<div class="col-md-4 logo-name">
 							<h1><a href="#">Blue</a></h1>
 						</div>
 
@@ -176,7 +183,7 @@
 			</div>
 		</section>
 
-	<!--Welcome to our site-->
+	<!--Service-->
 		<section id="Service">
 			<div class="container">
 				<div class="row">
@@ -317,21 +324,21 @@
 						<h2 class="wow animated fadeInDown">What people say</h2>
 						<div class="feedback-wrapper ">
 							<div class="owl-carousel owl-theme" id="carousel2">
-								<div class="clients">
+								<div class="clients wow animated fadeInUp">
 									<img src="images/member-1.jpg" alt="client">
 									<div class="quote">
 										<span>Katty Flower</span>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 									</div>
 								</div>
-								<div class="clients">
+								<div class="clients wow animated fadeInUp">
 									<img src="images/member-1.jpg" alt="client">
 									<div class="quote">
 										<span>Katty Flower</span>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 									</div>
 								</div>
-								<div class="clients">
+								<div class="clients wow animated fadeInUp">
 									<img src="images/member-1.jpg" alt="client">
 									<div class="quote">
 										<span>Katty Flower</span>
@@ -413,6 +420,121 @@
 			</div>
 		</section>
 
+	<!--Follow Us -->
+		<section id="social">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+				
+						<div class="title-wrapper wow animated fadeInDown">
+							<h2>Follow us</h2>
+							<p>Beautifully simple follow buttons to help you get followers on</p>
+						</div>
+				
+						<ul>
+							<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x""></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<!--Contact -->
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+
+					<div class="contact-title-wrapper wow animated fadeInDown">
+						<h2>Contact</h2>
+						<p>Leave a Message</p>
+					</div>
+					
+					<div class="col-md-7 contact-form wow animated fadeInLeft">
+						<form action="#" method="post">
+							<div class="input-field">
+								<input type="text" name="name" placeholder="Your Name..." class="form-control">
+							</div>
+							<div class="input-field">
+								<input type="text" name="email" placeholder="Your Email..." class="form-control">
+							</div>
+							<div class="input-field">
+								<input type="text" name="subject" placeholder="Subject..." class="form-control">
+							</div>
+							<div class="input-field">
+								<textarea name="message" placeholder="Messages..." class="form-control" id="textarea-content"></textarea>
+							</div>
+						</form>
+						<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
+					</div>
+
+					<div class="col-md-5 wow animated fadeInRight">
+						<div class="contact-info">
+							<h3>Contact us</h3>
+							<p>
+								<i class="fa fa-pencil"></i>Phoenix Inc.
+								<span>PO Box 345678</span>
+								<span>Little Lonsdale St, Melbourne</span>
+								<span>Australia</span>
+							</p>
+							<br>
+							<p>
+								<i class="fa fa-phone"></i><a href="#">Phone: (415) 124-5678</a>
+							</p>
+							<p>
+								<i class="fa fa-envelope"></i><a href="#">website@yourname.com</a>
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+	<!--google map-->
+	<section id="google-map" class="wow animated fadeInUp">
+		<div id="map"></div>
+	</section>
+
+	<!--footer-->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="footer-wrapper">
+
+					<div class="footer-title wow animated fadeInDown">
+						<p>newsletter signup</p>
+						<p>Get Cool Stuff! We hate spam!</p>
+					</div>
+					
+					<form action="#" method="post" class="footer-form wow animated fadeInUp">
+						<div class="input-field">
+							<input type="email" placeholder="Enter Your Email..." class="form-control" id="footer-email">
+							<button type="submit">
+								<i class="fa fa-paper-plane fa-lg"></i>
+							</button>
+						</div>
+					</form>
+					
+					<div class="footer-icons">
+						<ul>
+							<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
+						</ul>
+					</div>
+					
+					<p id="confidential">Design And developed By <a href="#">Themefisher</a>. All rights Reserved</p>
+					
+				</div>
+
+			</div>
+		</div>
+	</footer>
 
 
 
@@ -433,8 +555,28 @@
     <script src="js/jquery.easing.min.js"></script>
     <!-- onscroll animation -->
     <script src="js/wow.min.js"></script>
+    <!-- google maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7E5O8nK__uUQTDxuh2gng_zQEKpvh_TA&callback=initMap"
+    async defer></script>
 
-    <script type="text/javascript">	
+    <script type="text/javascript">
+    /*Preloader*/
+    	$(window).load(function(){
+				$("#preloader").fadeOut("slow");
+			});
+
+		/*Scroll function for fixed menu navigation*/
+			$(window).scroll(function () {
+        if ($(window).scrollTop() > 400) {
+            $(".logo-name a").css("color","#fff");
+            $(".menu-wrap").css("padding","0");
+        } else {
+            $(".logo-name a").css("color","#9d9d9d");
+            $(".menu-wrap").css("padding","1.2rem");
+        }
+    });
+
+		/*Slit slider initiate*/
 			$(function() {
 			
 				var Page = (function() {
@@ -519,87 +661,106 @@
 
 
 		/* Fullscreen autoheight function for Slit Slider*/
-		var slideHeight = $(window).height();
-    
-    $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
+			var slideHeight = $(window).height();
+	    
+	    $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
 
-    $(window).resize(function(){'use strict',
-        $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
-    });
-
-    /* Owl Carousel01 slider initiate*/
-				$('#carousel1').owlCarousel({
-					smartSpeed: 700,
-			    loop: true,
-			    dots: false,
-			    margin:10,
-			    nav:true,
-			    navText: ["<i class='fa fa-angle-left aria-hidden='true'></i>", "<i class='fa fa-angle-right aria-hidden='true'></i>"],
-			    responsive:{
-			        0:{
-			            items:1
-			        },
-			        600:{
-			            items:1
-			        },
-			        1000:{
-			            items:1
-			        }
-			    	}
-				});
-
-		$('#carousel2').owlCarousel({
-					smartSpeed: 700,
-			    loop: true,
-			    dots: false,
-			    margin:10,
-			    nav:true,
-			    navText: ["<i class='fa fa-angle-left aria-hidden='true'></i>", "<i class='fa fa-angle-right aria-hidden='true'></i>"],
-			    responsive:{
-			        0:{
-			            items:1
-			        },
-			        600:{
-			            items:1
-			        },
-			        1000:{
-			            items:1
-			        }
-			    	}
-				});
-
-				//WOW js initiate
-				new WOW().init();
+	    $(window).resize(function(){'use strict',
+	        $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
+	    });
 
 
+	  /* Owl Carousel01 slider initiate*/
+			$('#carousel1').owlCarousel({
+				smartSpeed: 700,
+		    loop: true,
+		    dots: false,
+		    margin:10,
+		    nav:true,
+		    navText: ["<i class='fa fa-angle-left aria-hidden='true'></i>", "<i class='fa fa-angle-right aria-hidden='true'></i>"],
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:1
+		        },
+		        1000:{
+		            items:1
+		        }
+		    	}
+			});
+
+		/* Owl Carousel02 slider initiate*/
+			$('#carousel2').owlCarousel({
+				smartSpeed: 700,
+		    loop: true,
+		    dots: false,
+		    margin:10,
+		    nav:true,
+		    navText: ["<i class='fa fa-angle-left aria-hidden='true'></i>", "<i class='fa fa-angle-right aria-hidden='true'></i>"],
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:1
+		        },
+		        1000:{
+		            items:1
+		        }
+		    	}
+			});
+
+
+		/* WOW js initiate*/
+			new WOW().init();
+
+
+		/*Fancy box initiate and customs*/
 			$(".fancybox").fancybox({
-		padding: 0,
+				padding: 0,
 
-		openEffect : 'elastic',
-		openSpeed  : 650,
+				openEffect : 'elastic',
+				openSpeed  : 650,
 
-		closeEffect : 'elastic',
-		closeSpeed  : 550,
+				closeEffect : 'elastic',
+				closeSpeed  : 550,
 
-		closeClick : true,
+				closeClick : true,
 			
-		beforeShow: function () {
-			this.title = $(this.element).attr('title');
-			this.title = '<h3>' + this.title + '</h3>' + '<p>' + $(this.element).parents('.portfolio-item').find('img').attr('alt') + '</p>';
-		},
+				beforeShow: function () {
+					this.title = $(this.element).attr('title');
+					this.title = '<h3>' + this.title + '</h3>' + '<p>' + $(this.element).parents('.portfolio-item').find('img').attr('alt') + '</p>';
+				},
 		
-		helpers : {
-			title : { 
-				type: 'inside' 
-			},
-			overlay : {
-				css : {
-					'background' : 'rgba(0,0,0,0.8)'
+				helpers : {
+					title : { 
+						type: 'inside' 
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(0,0,0,0.8)'
+						}
+					}
 				}
-			}
-		}
-	});
+			});
+
+
+		/*google-maps*/
+			var map;
+	    function initMap() {
+	      map = new google.maps.Map(document.getElementById('google-map'), {
+	        center: {lat: 50.450750, lng: 30.523233},
+	        zoom: 15
+	      });
+	    var marker = new google.maps.Marker({
+	        position: {lat: 50.450750, lng: 30.523233},
+	        map: map
+	      });
+	    }
 	
 		</script>
 </body>
 </html>
+
