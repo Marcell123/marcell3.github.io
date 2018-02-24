@@ -84,7 +84,6 @@
 
 .demo-2 .sl-slider a {
 	color: #fff;
-	width: 12%;
 	padding: 15px 55px;
 	z-index: 100;
 	margin: 0 auto;
@@ -94,10 +93,10 @@
     font-family: 'Open Sans', sans-serif;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     line-height: 25px;
+    display: inline-block;
 }
 
 .demo-2 .sl-slider h2 {
-	font-size: 52px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
 	font-family: 'Open Sans', sans-serif;
 }
@@ -417,20 +416,3 @@
 }
 
 
-/* Media Queries for custom slider */
-
-@media screen and (max-width: 660px) {
-	
-	.demo-2 .sl-slider-wrapper {
-		height: 500px;
-	}
-
-	.demo-2 .sl-slider h2 {
-		font-size: 36px;
-	}
-
-	.demo-2 .sl-slider p {
-		font-size: 16px;
-	}
-
-}

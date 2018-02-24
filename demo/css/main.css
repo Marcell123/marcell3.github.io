@@ -22,8 +22,13 @@ a {
   transition: 0.3s all ease-out 0s;
 }
 
+header {
+  position: relative;
+}
+
 .caption-content {
   transform: translateY(50%);
+  text-align: center;
 }
 
 /* Preloader*/
@@ -100,60 +105,42 @@ a {
 }
 
 /* Header */
-.menu-wrap {
-  padding: 1.2rem 0;
+#navigation {
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  -webkit-transition: all 0.8s ease 0s;
-  -moz-transition: all 0.8s ease 0s;
-  -ms-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  padding: 2rem 0;
+  -webkit-transition: 0.8s all;
+  -o-transition: 0.8s all;
+  transition: 0.8s all;
 }
 
-.menu-wrap h1 {
+#navigation h1 {
   font-size: 2rem;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  margin-top: 0;
-  text-transform: uppercase;
-  line-height: 3.2rem;
-  padding: 1.5rem;
-  width: 28%;
-}
-
-.menu-wrap h1:hover a {
-  color: #fff;
-}
-
-.menu-wrap h1 a {
-  color: #9d9d9d;
-  cursor: pointer;
-}
-
-.menu-wrap ul {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
   font-family: 'Open Sans', sans-serif;
-  line-height: 3.2rem;
-}
-
-.menu-wrap ul li {
-  display: flex;
-}
-
-.menu-wrap ul li a {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 400;
-  padding: 1.5rem;
+  margin: 0;
   text-transform: uppercase;
-  text-decoration: none;
+}
+
+#navigation h1 a {
+  color: #9d9d9d;
+}
+
+#navigation nav > ul > li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-toggle {
+  background: transparent !important;
+  border-color: #fff !important;
+}
+
+.navbar-toggle:hover {
+  background: transparent !important;
 }
 
 /* Welcome */
@@ -1013,4 +1000,241 @@ footer#footer .footer-wrapper #confidential a:hover {
 
 .footer-icons ul li a:hover {
   color: #009EE3;
+}
+
+@media only screen and (min-width: 992px) {
+  header .demo-2 .sl-slider h2 {
+    font-size: 45px;
+  }
+}
+
+/* Adaptive. Responsive for desktop*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*header*/
+  header .demo-2 .sl-slider h2 {
+    font-size: 40px;
+    width: auto;
+  }
+  header .nav-dots {
+    bottom: 5%;
+  }
+  /*Welcome to our site*/
+  section#Welcome .welcome {
+    margin-top: 50px;
+  }
+  section#Welcome .welcome p {
+    overflow: visible;
+  }
+  /*Service*/
+  section#Service .service-item {
+    margin-bottom: 50px;
+  }
+  /*Featured projects*/
+  section#Featured-projects .project-wrapper .portfolio-item {
+    width: 48%;
+  }
+  /*Price*/
+  section#price .price-block {
+    margin-bottom: 50px;
+  }
+  /*contact*/
+  section#contact .contact-form {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 9px;
+  }
+  /*header*/
+  header {
+    position: relative;
+    overflow-x: hidden;
+  }
+  header .sl-slider h2 {
+    width: 100% !important;
+    font-size: 18px;
+    padding: 100px 0 30px !important;
+  }
+  header .sl-slider p {
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+  header .sl-slider a {
+    line-height: 1.4 !important;
+  }
+  /*Welcome to our site*/
+  section#Welcome .owl-content h3 {
+    font-size: 18px;
+  }
+  section#Welcome .welcome h3 {
+    font-size: 18px;
+    margin-top: 75px;
+  }
+  section#Welcome .welcome .welcome-content p {
+    overflow: visible;
+    font-size: 1.6rem;
+  }
+  section#Welcome .welcome .welcome-content a {
+    box-shadow: none;
+    padding: 1.3rem 3.5rem;
+  }
+  /*Service*/
+  section#Service h2 {
+    font-size: 25px;
+  }
+  section#Service .service-title h2 {
+    font-size: 25px;
+  }
+  section#Service .service-title h2:after {
+    left: 32%;
+  }
+  /*Featured projects*/
+  section#Featured-projects .featured-projects-title h2 {
+    font-size: 25px;
+  }
+  section#Featured-projects .featured-projects-title h2:after {
+    left: 32%;
+  }
+  section#Featured-projects .featured-projects-title p {
+    line-height: 25px;
+  }
+  section#Featured-projects .project-wrapper .portfolio-item {
+    width: 280px;
+    margin: 0 auto 10px !important;
+  }
+  section#Featured-projects .project-wrapper .portfolio-item a {
+    font-size: 13px !important;
+  }
+  /*What people say*/
+  section#Review .overlay h2 {
+    font-size: 25px !important;
+  }
+  section#Review .overlay h2:after {
+    left: 32%;
+  }
+  section#Review .overlay .quote:before, section#Review .overlay .quote:after {
+    display: none;
+  }
+  section#Review .overlay .clients {
+    width: 95%;
+  }
+  section#Review .overlay .clients p {
+    line-height: 30px !important;
+  }
+  /*Price*/
+  section#price .price-title h2 {
+    font-size: 25px !important;
+  }
+  section#price .price-title h2:after {
+    left: 32%;
+  }
+  section#price .price-block {
+    margin-bottom: 50px;
+  }
+  /*Follow Us*/
+  section#social h2 {
+    font-size: 25px;
+  }
+  section#social h2:after {
+    left: 32%;
+  }
+  section#social p {
+    line-height: 25px;
+  }
+  section#social ul > li:nth-child(2) {
+    margin: 0 25px;
+  }
+  section#social ul > li > a {
+    width: 65px;
+    height: 65px;
+    line-height: 71px;
+  }
+  /*Contact*/
+  section#contact .contact-title-wrapper h2 {
+    font-size: 25px !important;
+  }
+  section#contact .contact-title-wrapper h2:after {
+    left: 32%;
+  }
+  section#contact input {
+    font-size: 16px;
+  }
+  section#contact .contact-info {
+    margin-top: 50px;
+  }
+  /*footer*/
+  footer#footer {
+    overflow: hidden !important;
+  }
+  footer#footer .footer-wrapper {
+    width: 92%;
+  }
+  footer#footer .footer-wrapper button {
+    line-height: 25px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /*header*/
+  .sl-slider h2 {
+    font-size: 35px !important;
+  }
+  /*Service*/
+  section#Service .service-title h2:after {
+    left: 38%;
+  }
+  section#Service .service-item {
+    margin: 0 auto 50px;
+    width: 57%;
+  }
+  /*Featured projects*/
+  section#Featured-projects .featured-projects-title h2:after {
+    left: 38%;
+  }
+  section#Featured-projects .project-wrapper .portfolio-item {
+    width: 48%;
+  }
+  section#Featured-projects .project-wrapper .portfolio-item figcaption.mask {
+    bottom: -147px;
+    padding: 15px;
+  }
+  /*What people say*/
+  section#Review .overlay h2:after {
+    left: 38%;
+  }
+  section#Review .overlay .quote:before, section#Review .overlay .quote:after {
+    display: none;
+  }
+  section#Review .overlay .clients {
+    width: 80%;
+  }
+  /*Price*/
+  section#price .price-title h2:after {
+    left: 38%;
+  }
+  /*Follow Us*/
+  section#social h2:after {
+    left: 38%;
+  }
+  section#social ul > li:nth-child(2) {
+    margin: 0 50px;
+  }
+  section#social ul > li > a {
+    width: 90px;
+    height: 90px;
+    line-height: 96px;
+  }
+  /*contact*/
+  section#contact .contact-title-wrapper h2:after {
+    left: 38%;
+  }
+  /*footer*/
+  footer#footer .footer-wrapper #confidential {
+    font-size: 12px;
+  }
+  footer#footer .footer-wrapper button {
+    line-height: 27px;
+  }
 }

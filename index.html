@@ -45,7 +45,7 @@
 
 
 </head>
-<body>
+<body id="body">
 
 	<!-- Preloader -->
 		<div id="preloader">
@@ -53,91 +53,121 @@
 	    	<div class="battery"></div>
 	    </div>
 		</div>
+	<!--End Preloader-->
 
-	<!--Header-->
+	<!-- ====================================================================
+	 header 
+	===================================================================== -->
+
 		<header class="about-slider">
 
-			<div class="menu-wrap">
+			<div id="navigation" class="navbar-inverse navbar-fixed-top">
 				<div class="container">
-					<div class="row">
+					<div class="navbar-header">
 
-						<div class="col-md-4 logo-name">
-							<h1><a href="#">Blue</a></h1>
-						</div>
+          <!-- responsive nav button -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+	          </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+						<h1 class="navbar-brand">
+							<a href="#body">Blue</a>
+						</h1>
+					<!-- /logo -->
 
-						<div class="col-md-8">
-							<ul>
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Service</a></li>
-								<li><a href="#">Portfolio</a></li>
-								<li><a href="#">Testimonial</a></li>
-								<li><a href="#">Price</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-						</div>
+        	</div>
 
-					</div>
+				<!-- navigation menu list -->
+          <nav class="collapse navbar-collapse navbar-right" role="navigation">
+            <ul id="nav" class="nav navbar-nav">
+              <li><a href="#body">Home</a></li>
+              <li><a href="#Service">Service</a></li>
+              <li><a href="#Welcome">Portfolio</a></li>
+              <li><a href="#Review">Testimonial</a></li>
+              <li><a href="#price">Price</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+				<!-- /navigation menu list -->
 				</div>
 			</div>
 
+		<!--slit slider-->
 			<div class="demo-2">
 			 	<div id="slider" class="sl-slider-wrapper">
 			 	
-			 					<div class="sl-slider">
-			 					
-			 						<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-			 							<div class="sl-slide-inner">
-			 								<div class="bg-img bg-img-1"></div>
-			 								<div class="caption-content">
-			 									<h2 class="animated fadeInDown">BLUE Onepage HTML5 Template</h2>
-			 									<p class="animated fadeInDown">Clean and Professional one page Template</p>
-			 									<a href="#" class="btn btn-blue btn-effect animated fadeInDown">Join US</a>
-			 								</div>
-			 							</div>
-			 						</div>
-			 						
-			 						<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-			 							<div class="sl-slide-inner">
-			 								<div class="bg-img bg-img-2"></div>
-			 								<div class="caption-content">
-			 									<h2>BLUE Onepage HTML5 Template</h2>
-			 									<p>Clean and Professional one page Template</p>
-			 									<a href="#" class="btn btn-blue btn-effect animated fadeInDown">Join US</a>
-			 								</div>
-			 							</div>
-			 						</div>
-			 						
-			 						<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-			 							<div class="sl-slide-inner">
-			 								<div class="bg-img bg-img-3"></div>
-			 								<div class="caption-content">
-			 									<h2>BLUE Onepage HTML5 Template</h2>
-			 									<p>Clean and Professional one page Template</p>
-			 									<a href="#" class="btn btn-blue btn-effect animated fadeInDown">Join US</a>
-			 								</div>
-			 							</div>
-			 						</div>
-			 						
-			 						
-			 					</div><!-- /sl-slider -->
+ 					<div class="sl-slider">
+
+ 					<!--1st slide-->
+ 						<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+ 							<div class="sl-slide-inner">
+ 								<div class="bg-img bg-img-1"></div>
+ 								<div class="caption-content">
+ 									<h2 class="animated fadeInDown">BLUE Onepage HTML5 Template</h2>
+ 									<p class="animated fadeInDown">Clean and Professional one page Template</p>
+ 									<a href="#" class="btn btn-blue btn-effect animated fadeInDown">Join US</a>
+ 								</div>
+ 							</div>
+ 						</div>
+
+ 					<!--2nd slide-->
+ 						<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+ 							<div class="sl-slide-inner">
+ 								<div class="bg-img bg-img-2"></div>
+ 								<div class="caption-content">
+ 									<h2>BLUE Onepage HTML5 Template</h2>
+ 									<p>Clean and Professional one page Template</p>
+ 									<a href="#" class="btn btn-blue btn-effect animated fadeInDown">Join US</a>
+ 								</div>
+ 							</div>
+ 						</div>
+
+ 					<!--3rd slide-->
+ 						<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+ 							<div class="sl-slide-inner">
+ 								<div class="bg-img bg-img-3"></div>
+ 								<div class="caption-content">
+ 									<h2>BLUE Onepage HTML5 Template</h2>
+ 									<p>Clean and Professional one page Template</p>
+ 									<a href="#" class="btn btn-blue btn-effect animated fadeInDown">Join US</a>
+ 								</div>
+ 							</div>
+ 						</div>
+ 											
+ 					</div><!-- /sl-slider -->
 			 	
 			 	</div><!-- /slider-wrapper -->
 			</div>
-				
-				<nav id="nav-arrows" class="nav-arrows">
+		<!--end slit slider-->
+
+			<!--slit slider arrows-->		
+				<nav id="nav-arrows" class="nav-arrows visible-md visible-lg">
 					<a class="sl-prev"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></a>
 					<a class="sl-next"><i class="fa fa-angle-right fa-3x" aria-hidden="true"></i></a>
 				</nav>
+			<!--end slit slider arrows-->
 
-				<nav id="nav-dots" class="nav-dots">
+			<!--slit slider dots-->
+				<nav id="nav-dots" class="nav-dots visible-xs visible-sm">
 					<span class="nav-dot-current"></span>
 					<span></span>
 					<span></span>
 				</nav>
+			<!--end slit slider dots-->
 
 		</header>
 
-	<!--Welcome to our site-->
+	<!-- ====================================================================
+	 end header 
+	===================================================================== -->
+
+
+	<!--Welcome section (Welcome to our site)-->
 		<section id="Welcome">
 			<div class="container">
 				<div class="row">
@@ -182,8 +212,9 @@
 				</div>
 			</div>
 		</section>
+	<!--end Welcome section-->
 
-	<!--Service-->
+	<!--Service section-->
 		<section id="Service">
 			<div class="container">
 				<div class="row">
@@ -191,7 +222,7 @@
 						<h2 class="wow animated bounceInLeft">Service</h2>
 						<p class="wow animated bounceInRight">The Key Features of our Job</p>
 					</div>
-					<div class="col-md-3 wow animated zoomIn">
+					<div class="col-md-3 col-sm-6 col-xs-12 wow animated zoomIn">
 						<div class="service-item">
 							<div class="service-icon">
 								<i class="fa fa-home fa-3x"></i>
@@ -200,7 +231,7 @@
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 						</div>
 					</div>
-					<div class="col-md-3 wow animated zoomIn" data-wow-delay="0.3s">
+					<div class="col-md-3 col-sm-6 col-xs-12 wow animated zoomIn" data-wow-delay="0.3s">
 						<div class="service-item">
 							<div class="service-icon">
 								<i class="fa fa-tasks fa-3x"></i>
@@ -209,7 +240,7 @@
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 						</div>
 					</div>
-					<div class="col-md-3 wow animated zoomIn" data-wow-delay="0.6s">
+					<div class="col-md-3 col-sm-6 col-xs-12 wow animated zoomIn" data-wow-delay="0.6s">
 						<div class="service-item">
 							<div class="service-icon">
 								<i class="fa fa-clock-o fa-3x"></i>
@@ -218,7 +249,7 @@
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 						</div>
 					</div>
-					<div class="col-md-3 wow animated zoomIn" data-wow-delay="0.9s">
+					<div class="col-md-3 col-sm-6 col-xs-12 wow animated zoomIn" data-wow-delay="0.9s">
 						<div class="service-item">
 							<div class="service-icon">
 								<i class="fa fa-heart fa-3x"></i>
@@ -230,8 +261,9 @@
 				</div>
 			</div>
 		</section>
+	<!--end Service section-->
 	
-	<!--Featured projects-->
+	<!--Featured projects section-->
 		<section id="Featured-projects">
 			<div class="container">
 				<div class="row">
@@ -315,8 +347,9 @@
 				</div>
 			</div>
 		</section>
+	<!--end Featured projects section-->
 
-	<!--What people say-->
+	<!--Review section (What people say)-->
 		<section id="Review">
 			<div class="overlay">
 				<div class="container">
@@ -351,8 +384,9 @@
 				</div>
 			</div>
 		</section>
+	<!--end Review section-->
 
-	<!--Price-->
+	<!--Price section-->
 		<section id="price">
 			<div class="container">
 				<div class="row">
@@ -419,8 +453,9 @@
 				</div>
 			</div>
 		</section>
+	<!--end Price section-->
 
-	<!--Follow Us -->
+	<!--Social section (Follow Us) -->
 		<section id="social">
 			<div class="overlay">
 				<div class="container">
@@ -440,8 +475,9 @@
 				</div>
 			</div>
 		</section>
+	<!--end social section-->
 
-	<!--Contact -->
+	<!--Contact section -->
 		<section id="contact">
 			<div class="container">
 				<div class="row">
@@ -491,50 +527,53 @@
 				</div>
 			</div>
 		</section>
+	<!--end Contact section -->
 
-	<!--google map-->
-	<section id="google-map" class="wow animated fadeInUp">
-		<div id="map"></div>
-	</section>
+	<!--Google map section-->
+		<section id="google-map" class="wow animated fadeInUp">
+			<div id="map"></div>
+		</section>
+		<!--end Google map section-->
 
 	<!--footer-->
-	<footer id="footer">
-		<div class="container">
-			<div class="row">
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
 
-				<div class="footer-wrapper">
+					<div class="footer-wrapper">
 
-					<div class="footer-title wow animated fadeInDown">
-						<p>newsletter signup</p>
-						<p>Get Cool Stuff! We hate spam!</p>
-					</div>
-					
-					<form action="#" method="post" class="footer-form wow animated fadeInUp">
-						<div class="input-field">
-							<input type="email" placeholder="Enter Your Email..." class="form-control" id="footer-email">
-							<button type="submit">
-								<i class="fa fa-paper-plane fa-lg"></i>
-							</button>
+						<div class="footer-title wow animated fadeInDown">
+							<p>newsletter signup</p>
+							<p>Get Cool Stuff! We hate spam!</p>
 						</div>
-					</form>
-					
-					<div class="footer-icons">
-						<ul>
-							<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
-							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
-							<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
-							<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
-							<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
-						</ul>
+						
+						<form action="#" method="post" class="footer-form wow animated fadeInUp">
+							<div class="input-field">
+								<input type="email" placeholder="Enter Your Email..." class="form-control" id="footer-email">
+								<button type="submit">
+									<i class="fa fa-paper-plane fa-lg"></i>
+								</button>
+							</div>
+						</form>
+						
+						<div class="footer-icons">
+							<ul>
+								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
+							</ul>
+						</div>
+						
+						<p id="confidential">Design And developed By <a href="#">Themefisher</a>. All rights Reserved</p>
+						
 					</div>
-					
-					<p id="confidential">Design And developed By <a href="#">Themefisher</a>. All rights Reserved</p>
-					
-				</div>
 
+				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
+	<!--end footer-->
 
 
 
@@ -553,212 +592,230 @@
     <script src="js/jquery.fancybox.pack.js"></script>
     <!-- jquery easing -->
     <script src="js/jquery.easing.min.js"></script>
-    <!-- onscroll animation -->
+    <!-- trigger onscroll animation -->
     <script src="js/wow.min.js"></script>
     <!-- google maps-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7E5O8nK__uUQTDxuh2gng_zQEKpvh_TA&callback=initMap"
     async defer></script>
-
+    <!-- singlePageNav jQuery plugin -->
+    <script src="js/jquery.singlePageNav.min.js"></script>
+		<!--custom js functions-->
     <script type="text/javascript">
-    /*Preloader*/
-    	$(window).load(function(){
-				$("#preloader").fadeOut("slow");
-			});
+	    /*Preloader*/
+	    	$(window).load(function(){
+					$("#preloader").fadeOut("slow");
+				});
 
-		/*Scroll function for fixed menu navigation*/
-			$(window).scroll(function () {
-        if ($(window).scrollTop() > 400) {
-            $(".logo-name a").css("color","#fff");
-            $(".menu-wrap").css("padding","0");
-        } else {
-            $(".logo-name a").css("color","#9d9d9d");
-            $(".menu-wrap").css("padding","1.2rem");
-        }
-    });
+			/*Single page nav Jquery plugin initiate. Scroll to choosed link*/
+				$('#nav').singlePageNav({
+					offset: $('#nav').outerHeight(),
+					filter: ':not(.external)',
+					speed: 2000,
+					currentClass: 'current',
+					easing: 'easeInOutExpo',
+					updateHash: true,
+					beforeStart: function() {
+						console.log('begin scrolling');
+					},
+					onComplete: function() {
+						console.log('done scrolling');
+					}
+				});
 
-		/*Slit slider initiate*/
-			$(function() {
-			
-				var Page = (function() {
-
-					var $navArrows = $( '#nav-arrows' ),
-						$nav = $( '#nav-dots > span' ),
-						slitslider = $( '#slider' ).slitslider( {
-							onBeforeChange : function( slide, pos ) {
-
-								$nav.removeClass( 'nav-dot-current' );
-								$nav.eq( pos ).addClass( 'nav-dot-current' );
-
-							}
-						} ),
-
-						init = function() {
-
-							initEvents();
-							
-						},
-						initEvents = function() {
-
-							// add navigation events
-							$navArrows.children( ':last' ).on( 'click', function() {
-
-								slitslider.next();
-								return false;
-
-							} );
-
-							$navArrows.children( ':first' ).on( 'click', function() {
-								
-								slitslider.previous();
-								return false;
-
-							} );
-
-							$nav.each( function( i ) {
-							
-								$( this ).on( 'click', function( event ) {
-									
-									var $dot = $( this );
-									
-									if( !slitslider.isActive() ) {
-
-										$nav.removeClass( 'nav-dot-current' );
-										$dot.addClass( 'nav-dot-current' );
-									
-									}
-									
-									slitslider.jump( i + 1 );
-									return false;
-								
-								} );
-								
-							} );
-
-						};
-
-						return { init : init };
-
-				})();
-
-				Page.init();
-
-				/**
-				 * Notes: 
-				 * 
-				 * example how to add items:
-				 */
-
-				/*
-				
-				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
-				
-				// call the plugin's add method
-				ss.add($items);
-
-				*/
-			
-			});
-
-
-		/* Fullscreen autoheight function for Slit Slider*/
-			var slideHeight = $(window).height();
-	    
-	    $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
-
-	    $(window).resize(function(){'use strict',
-	        $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
+			/*Function for changing css styles for navigation on scroll*/
+				$(window).scroll(function () {
+	        if ($(window).scrollTop() > 400) {
+	            $("#navigation h1 a").css("color","#fff");
+	            $("#navigation").css("padding","0.5rem 0");
+	        } else {
+	            $("#navigation h1 a").css("color","#9d9d9d");
+	            $("#navigation").css("padding","2rem 0");
+	        }
 	    });
 
+			/*Slit slider initiate*/
+				$(function() {
+				
+					var Page = (function() {
 
-	  /* Owl Carousel01 slider initiate*/
-			$('#carousel1').owlCarousel({
-				smartSpeed: 700,
-		    loop: true,
-		    dots: false,
-		    margin:10,
-		    nav:true,
-		    navText: ["<i class='fa fa-angle-left aria-hidden='true'></i>", "<i class='fa fa-angle-right aria-hidden='true'></i>"],
-		    responsive:{
-		        0:{
-		            items:1
-		        },
-		        600:{
-		            items:1
-		        },
-		        1000:{
-		            items:1
-		        }
-		    	}
-			});
+						var $navArrows = $( '#nav-arrows' ),
+							$nav = $( '#nav-dots > span' ),
+							slitslider = $( '#slider' ).slitslider( {
+								onBeforeChange : function( slide, pos ) {
 
-		/* Owl Carousel02 slider initiate*/
-			$('#carousel2').owlCarousel({
-				smartSpeed: 700,
-		    loop: true,
-		    dots: false,
-		    margin:10,
-		    nav:true,
-		    navText: ["<i class='fa fa-angle-left aria-hidden='true'></i>", "<i class='fa fa-angle-right aria-hidden='true'></i>"],
-		    responsive:{
-		        0:{
-		            items:1
-		        },
-		        600:{
-		            items:1
-		        },
-		        1000:{
-		            items:1
-		        }
-		    	}
-			});
+									$nav.removeClass( 'nav-dot-current' );
+									$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+								}
+							} ),
+
+							init = function() {
+
+								initEvents();
+								
+							},
+							initEvents = function() {
+
+								// add navigation events
+								$navArrows.children( ':last' ).on( 'click', function() {
+
+									slitslider.next();
+									return false;
+
+								} );
+
+								$navArrows.children( ':first' ).on( 'click', function() {
+									
+									slitslider.previous();
+									return false;
+
+								} );
+
+								$nav.each( function( i ) {
+								
+									$( this ).on( 'click', function( event ) {
+										
+										var $dot = $( this );
+										
+										if( !slitslider.isActive() ) {
+
+											$nav.removeClass( 'nav-dot-current' );
+											$dot.addClass( 'nav-dot-current' );
+										
+										}
+										
+										slitslider.jump( i + 1 );
+										return false;
+									
+									} );
+									
+								} );
+
+							};
+
+							return { init : init };
+
+					})();
+
+					Page.init();
+
+					/**
+					 * Notes: 
+					 * 
+					 * example how to add items:
+					 */
+
+					/*
+					
+					var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+					
+					// call the plugin's add method
+					ss.add($items);
+
+					*/
+				
+				});
 
 
-		/* WOW js initiate*/
-			new WOW().init();
+			/* Fullscreen autoheight function for Slit Slider*/
+				var slideHeight = $(window).height();
+		    
+		    $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
+
+		    $(window).resize(function(){'use strict',
+		        $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
+		    });
 
 
-		/*Fancy box initiate and customs*/
-			$(".fancybox").fancybox({
-				padding: 0,
+		  /* Owl Carousel01 slider initiate*/
+				$('#carousel1').owlCarousel({
+					smartSpeed: 700,
+			    loop: true,
+			    dots: false,
+			    margin:10,
+			    nav:true,
+			    navText: ["<i class='fa fa-angle-left aria-hidden='true'></i>", "<i class='fa fa-angle-right aria-hidden='true'></i>"],
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:1
+			        },
+			        1000:{
+			            items:1
+			        }
+			    	}
+				});
 
-				openEffect : 'elastic',
-				openSpeed  : 650,
+			/* Owl Carousel02 slider initiate*/
+				$('#carousel2').owlCarousel({
+					smartSpeed: 700,
+			    loop: true,
+			    dots: false,
+			    margin:10,
+			    nav:true,
+			    navText: ["<i class='fa fa-angle-left aria-hidden='true'></i>", "<i class='fa fa-angle-right aria-hidden='true'></i>"],
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:1
+			        },
+			        1000:{
+			            items:1
+			        }
+			    	}
+				});
 
-				closeEffect : 'elastic',
-				closeSpeed  : 550,
 
-				closeClick : true,
-			
-				beforeShow: function () {
-					this.title = $(this.element).attr('title');
-					this.title = '<h3>' + this.title + '</h3>' + '<p>' + $(this.element).parents('.portfolio-item').find('img').attr('alt') + '</p>';
-				},
-		
-				helpers : {
-					title : { 
-						type: 'inside' 
+			/* WOW js initiate*/
+				new WOW().init();
+
+
+			/*Fancy box initiate and customs*/
+				$(".fancybox").fancybox({
+					padding: 0,
+
+					openEffect : 'elastic',
+					openSpeed  : 650,
+
+					closeEffect : 'elastic',
+					closeSpeed  : 550,
+
+					closeClick : true,
+				
+					beforeShow: function () {
+						this.title = $(this.element).attr('title');
+						this.title = '<h3>' + this.title + '</h3>' + '<p>' + $(this.element).parents('.portfolio-item').find('img').attr('alt') + '</p>';
 					},
-					overlay : {
-						css : {
-							'background' : 'rgba(0,0,0,0.8)'
+			
+					helpers : {
+						title : { 
+							type: 'inside' 
+						},
+						overlay : {
+							css : {
+								'background' : 'rgba(0,0,0,0.8)'
+							}
 						}
 					}
-				}
-			});
+				});
 
 
-		/*google-maps*/
-			var map;
-	    function initMap() {
-	      map = new google.maps.Map(document.getElementById('google-map'), {
-	        center: {lat: 50.450750, lng: 30.523233},
-	        zoom: 15
-	      });
-	    var marker = new google.maps.Marker({
-	        position: {lat: 50.450750, lng: 30.523233},
-	        map: map
-	      });
-	    }
+			/*google-maps*/
+				var map;
+		    function initMap() {
+		      map = new google.maps.Map(document.getElementById('google-map'), {
+		        center: {lat: 50.450750, lng: 30.523233},
+		        zoom: 15
+		      });
+		    var marker = new google.maps.Marker({
+		        position: {lat: 50.450750, lng: 30.523233},
+		        map: map
+		      });
+		    }
 	
 		</script>
 </body>
