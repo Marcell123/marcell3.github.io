@@ -3,11 +3,13 @@ $white: #fff;
 
 html {
 	font-size: 10px;
-	overflow-x: hidden;
 }
 body {
 	font-size: 14px;
-	overflow-x: hidden;
+}
+html,body{
+	-webkit-overflow-scrolling : touch !important;
+	overflow: auto !important;
 }
 h1 {
 	margin: 0;
@@ -768,11 +770,16 @@ section#contact {
 .input-field {
 	margin-bottom: 1rem;
 	#textarea-content {
-		width: 100%;
+		width: 90%;
 		height: 16.5rem;
+		&:focus {
+			width: 90%;
+		}
 	}
 }
 .form-control {
+	width: 90%;
+	margin: 0 auto;
 	border: 1px solid #ececec;
   font-size: 1.6rem;
   font-family: 'Open Sans', sans-serif;
@@ -782,6 +789,10 @@ section#contact {
   padding: 0.6rem 1.2rem;
   box-shadow: none;
   border-radius: 0;
+  &:focus {
+  	box-shadow: none;
+  	width: 90%;
+  }
 }
 /*send submit button*/
 #submit {
@@ -1011,6 +1022,10 @@ and (max-width: 991px) {
 		.contact-form {
 			margin-bottom: 50px;
 		}
+		#submit {
+		display: block;
+		margin: 0 auto;
+	}
 	}
 }
 
@@ -1287,6 +1302,10 @@ and (max-width: 767px) {
 				}
 			}
 		}
+		#submit {
+		display: block;
+		margin: 0 auto;
+	}
 	}
 	/*footer*/
 	footer#footer {
@@ -1309,5 +1328,10 @@ and (max-width: 479px) {
 	/*Follow Us*/
 	section#social {
 		background-attachment: local;
+	}
+	/*contact*/
+	#submit {
+		display: block;
+		margin: 0 auto;
 	}
 }

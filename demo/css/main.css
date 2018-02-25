@@ -1,11 +1,14 @@
 html {
   font-size: 10px;
-  overflow-x: hidden;
 }
 
 body {
   font-size: 14px;
-  overflow-x: hidden;
+}
+
+html, body {
+  -webkit-overflow-scrolling: touch !important;
+  overflow: auto !important;
 }
 
 h1 {
@@ -845,11 +848,17 @@ section#contact .contact-title-wrapper p {
 }
 
 .input-field #textarea-content {
-  width: 100%;
+  width: 90%;
   height: 16.5rem;
 }
 
+.input-field #textarea-content:focus {
+  width: 90%;
+}
+
 .form-control {
+  width: 90%;
+  margin: 0 auto;
   border: 1px solid #ececec;
   font-size: 1.6rem;
   font-family: 'Open Sans', sans-serif;
@@ -859,6 +868,11 @@ section#contact .contact-title-wrapper p {
   padding: 0.6rem 1.2rem;
   box-shadow: none;
   border-radius: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  width: 90%;
 }
 
 /*send submit button*/
@@ -1068,6 +1082,10 @@ footer#footer .footer-wrapper #confidential a:hover {
   section#contact .contact-form {
     margin-bottom: 50px;
   }
+  section#contact #submit {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1275,6 +1293,10 @@ footer#footer .footer-wrapper #confidential a:hover {
   section#contact .contact-title-wrapper h2:after {
     left: 38%;
   }
+  section#contact #submit {
+    display: block;
+    margin: 0 auto;
+  }
   /*footer*/
   footer#footer .footer-wrapper #confidential {
     font-size: 12px;
@@ -1288,5 +1310,10 @@ footer#footer .footer-wrapper #confidential a:hover {
   /*Follow Us*/
   section#social {
     background-attachment: local;
+  }
+  /*contact*/
+  #submit {
+    display: block;
+    margin: 0 auto;
   }
 }
