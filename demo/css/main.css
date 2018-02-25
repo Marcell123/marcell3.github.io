@@ -27,7 +27,6 @@ header {
 }
 
 .caption-content {
-  transform: translateY(50%);
   text-align: center;
 }
 
@@ -141,6 +140,22 @@ header {
 
 .navbar-toggle:hover {
   background: transparent !important;
+}
+
+.slider-content-wrapper {
+  display: table;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+  min-height: 100%;
+  position: absolute;
+}
+
+.slider-content-wrapper .caption-content {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* Welcome */
@@ -782,6 +797,7 @@ section#social .overlay {
 /* Contact */
 section#contact {
   margin-top: 7rem;
+  overflow: hidden;
 }
 
 section#contact .contact-title-wrapper {
@@ -1004,7 +1020,8 @@ footer#footer .footer-wrapper #confidential a:hover {
 
 @media only screen and (min-width: 992px) {
   header .demo-2 .sl-slider h2 {
-    font-size: 45px;
+    font-size: 52px;
+    width: 92%;
   }
 }
 
@@ -1052,10 +1069,12 @@ footer#footer .footer-wrapper #confidential a:hover {
     position: relative;
     overflow-x: hidden;
   }
+  header .sl-slider {
+    padding: 23% 0;
+  }
   header .sl-slider h2 {
     width: 100% !important;
     font-size: 18px;
-    padding: 100px 0 30px !important;
   }
   header .sl-slider p {
     width: 100% !important;
@@ -1174,11 +1193,21 @@ footer#footer .footer-wrapper #confidential a:hover {
   footer#footer .footer-wrapper button {
     line-height: 25px;
   }
+  /*fancybox*/
+  .fancybox-title h3 {
+    font-size: 18px;
+  }
+  .fancybox-title p {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   /*header*/
-  .sl-slider h2 {
+  header .sl-slider {
+    padding: 40% 0;
+  }
+  header .sl-slider h2 {
     font-size: 35px !important;
   }
   /*Service*/

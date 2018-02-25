@@ -25,7 +25,6 @@ header {
 }
 
 .caption-content {
-	transform: translateY(50%);
 	text-align: center;
 }
 
@@ -128,6 +127,21 @@ header {
 	border-color: $white !important;
 	&:hover {
 		background: transparent !important;
+	}
+}
+
+.slider-content-wrapper {
+	display: table;
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 11;
+	min-height: 100%;
+	position: absolute;
+	.caption-content {
+		display: table-cell;
+		vertical-align: middle;
 	}
 }
 
@@ -713,6 +727,7 @@ section#social {
 /* Contact */
 section#contact {
 	margin-top: 7rem;
+	overflow: hidden;
 	.contact-title-wrapper {
 		text-align: center;
 		margin-bottom: 5rem;
@@ -926,7 +941,8 @@ and (min-width: 992px) {
 		.demo-2 {
 			.sl-slider {
 				h2 {
-					font-size: 45px;
+					font-size: 52px;
+					width: 92%;
 				}
 			}
 		}
@@ -987,6 +1003,7 @@ and (max-width: 991px) {
 			margin-bottom: 50px;
 		}
 	}
+	
 }
 
 
@@ -999,10 +1016,10 @@ and (max-width: 991px) {
 		position: relative;
   	overflow-x: hidden;
   	.sl-slider {
+			padding: 23% 0;
 			h2 {
 				width: 100% !important;
 				font-size: 18px;
-				padding: 100px 0 30px !important;
 			}
 			p {
 				width: 100% !important;
@@ -1158,14 +1175,30 @@ and (max-width: 991px) {
 			}
 		}
 	}
+	/*fancybox*/
+	.fancybox-title {
+		h3 {
+			font-size: 18px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
 }
+
+	
+
+
 @media only screen 
 and (min-width: 480px) 
 and (max-width: 767px) {
 	/*header*/
-	.sl-slider {
-		h2 {
-			font-size: 35px !important;
+	header {
+		.sl-slider {
+			padding: 40% 0;
+			h2 {
+				font-size: 35px !important;
+			}
 		}
 	}
 	/*Service*/
